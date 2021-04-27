@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>pro_register.html</title>
+        <style>
+            body {
+                background-color:cadetblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>상품등록페이지</h3>
+        <hr>
+        <form action="/pro_register/", method="POST">
+            <table>
+                <tr>
+                    <td>상품명: <input type="text" name="pro_name" maxlength="20"></td>
+                </tr>
+                <tr>
+                    <td>상품번호: <input type="text" name="pro_no"></td>
+                </tr>
+                <tr>
+                    <td>가격: <input type="text" name="pro_price"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="상품 등록하기"></td>
+                </tr>
+            </table>
+        </form>
+        <hr>
+        <form action="/product_delete/", method="POST">
+            <table>
+                <tr>
+                    <td>삭제하고 싶은 물건의 고유번호: <input type="text" name="productNum"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="상품 삭제하기"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
